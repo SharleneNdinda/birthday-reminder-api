@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="images/work.png" alt="Logo" width="256" height="256">
+    <img src="images/hero.png" alt="Logo" width="256" height="256">
   </a>
 
 <h3 align="center">Birthday Reminder API</h3>
@@ -57,16 +57,19 @@
 
 ### Getting Started
 
-1. Install all project requirements.
+1. Clone repository and setup virtual environment. Install all project requirements.
 ```sh
-  $ pip install -r requirements.txt
+  $ pip install -r requirements/base.txt
 ```
 
-2. You need Postgres setup on your local machine.
-
-3. Run migrations.
+2. Setup Postgres on your local machine and run migrations.
 ```sh
   $ python manage.py migrate
+```
+
+3. Run development server.
+```sh
+  $ python manage.py runserver
 ```
 
 
