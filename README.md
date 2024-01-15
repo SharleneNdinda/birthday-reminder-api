@@ -44,8 +44,6 @@
 
 ## About The Project
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Built With
 
 * [Django](https://www.django.com/)
@@ -55,7 +53,7 @@
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-### Getting Started
+### 🚀 Getting Started
 
 1. Clone repository and setup virtual environment. Install all project requirements.
 ```sh
@@ -74,3 +72,14 @@
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## 💯 Usage
+
+### 🔑 Authentication 
+
+birthday-reminder api uses JWT as the primary form of authentication. 
+The endpoints provided for obtaining a token and refreshing a token are:
+```sh
+$ /api/token
+$ /api/token/refresh
+```
