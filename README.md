@@ -26,9 +26,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -38,21 +35,14 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <ul>
+        <li><a href="#prerequisites">Authentication</a></li>
+    </ul>
 
   </ol>
 </details>
 
 ## About The Project
-
-### Built With
-
-* [Django](https://www.django.com/)
-* [Celery]()
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 ### 🚀 Getting Started
 
 1. Clone repository and setup virtual environment. Install all project requirements.
@@ -70,16 +60,14 @@
   $ python manage.py runserver
 ```
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## 💯 Usage
 
 ### 🔑 Authentication 
 
-birthday-reminder api uses JWT as the primary form of authentication. 
+birthday-reminder api uses `JWT` as the primary form of authentication. 
 The endpoints provided for obtaining a token and refreshing a token are:
 ```sh
-$ /api/token
-$ /api/token/refresh
+$ 127.0.0.1:8000/api/token
+$ 127.0.0.1:8000/api/token/refresh
 ```
+<p align="right">(<a href="#top">back to top</a>)</p>
