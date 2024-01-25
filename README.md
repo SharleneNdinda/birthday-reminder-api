@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="images/work.png" alt="Logo" width="256" height="256">
+    <img src="images/hero.png" alt="Logo" width="256" height="256">
   </a>
 
 <h3 align="center">Birthday Reminder API</h3>
@@ -26,9 +26,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -38,36 +35,39 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <ul>
+        <li><a href="#prerequisites">Authentication</a></li>
+    </ul>
 
   </ol>
 </details>
 
 ## About The Project
+### 🚀 Getting Started
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Built With
-
-* [Django](https://www.django.com/)
-* [Celery]()
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-### Getting Started
-
-1. Install all project requirements.
+1. Clone repository and setup virtual environment. Install all project requirements.
 ```sh
-  $ pip install -r requirements.txt
+  $ pip install -r requirements/base.txt
 ```
 
-2. You need Postgres setup on your local machine.
-
-3. Run migrations.
+2. Setup Postgres on your local machine and run migrations.
 ```sh
   $ python manage.py migrate
 ```
 
+3. Run development server.
+```sh
+  $ python manage.py runserver
+```
 
+## 💯 Usage
+
+### 🔑 Authentication 
+
+birthday-reminder api uses `JWT` as the primary form of authentication. 
+The endpoints provided for obtaining a token and refreshing a token are:
+```sh
+$ 127.0.0.1:8000/api/token
+$ 127.0.0.1:8000/api/token/refresh
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
