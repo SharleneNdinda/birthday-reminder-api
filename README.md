@@ -25,18 +25,22 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#">Prerequisites</a></li>
+        <li><a href="#">Installation</a></li>
       </ul>
+    <li><a href="#">System Design & Architecture</a></li>
     </li>
-    <li><a href="#usage">Usage</a></li>
+      <ul>
+        <li><a href="#">Database Design</a></li>
+      </ul>
+    <li><a href="#">Usage</a></li>
     <ul>
-        <li><a href="#prerequisites">Authentication</a></li>
+        <li><a href="#">Authentication</a></li>
     </ul>
 
   </ol>
@@ -60,6 +64,16 @@
   $ python manage.py runserver
 ```
 
+## 🚀 System Design & Architecture
+
+###  Database Design Diagram
+<div align="center">
+
+  <a href="">
+    <img src="images/erd.png" alt="Logo">
+  </a>
+</div >
+
 ## 💯 Usage
 
 ### 🔑 Authentication 
@@ -68,6 +82,7 @@ birthday-reminder api uses `JWT` as the primary form of authentication.
 The endpoints provided for obtaining a token and refreshing a token are:
 ```sh
 $ 127.0.0.1:8000/api/token
+
 $ 127.0.0.1:8000/api/token/refresh
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
