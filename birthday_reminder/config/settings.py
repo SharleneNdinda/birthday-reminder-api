@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "birthday_reminder.accounts",
     "birthday_reminder.common",
-    "birthday_reminder.notifications",
+    "birthday_reminder.birthdays",
     "corsheaders",
+    "django_extensions",
     "rest_framework",
     "rest_framework_simplejwt.token_blacklist",  # blacklist refresh tokens after usage to prevent security breeches
 ]
@@ -77,7 +78,8 @@ WSGI_APPLICATION = "birthday_reminder.config.wsgi.application"
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
-    )
+    ),
+    "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
 }
 
 # customize our token
@@ -120,7 +122,7 @@ SIMPLE_JWT = {
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME", "slade_emr_poc"),
+        "NAME": os.getenv("DB_NAME", ""),
         "USER": os.getenv("DB_USER", "app"),
         "PASSWORD": os.getenv("DB_PASS", "app"),
         "HOST": os.getenv("DB_HOST", "localhost"),

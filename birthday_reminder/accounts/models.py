@@ -2,16 +2,19 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 from birthday_reminder.common.models import AbstractBase
-    
+
 
 class UserProfile(AbstractBase):
     """User's profile."""
+
     bio = models.TextField(max_length=255)
-    profile_picture = models.ImageField(blank=True)
+    gender = models.CharField(null=True, blank=True)
+    date_of_birth = models.DateField()
+
 
 class AuthUser(AbstractUser):
     """Custom Auth User model."""
 
-    profile = models.ForeignKey(
-        UserProfile, related_name="profile", on_delete=models.PROTECT
+    profile = models.OneToOneField(
+        UserProfile, related_name="user", on_delete=models.PROTECT
     )

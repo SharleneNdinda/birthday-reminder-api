@@ -25,7 +25,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#">About The Project</a>
+      <a href="#">About This Project</a>
     </li>
     <li>
       <a href="#">Getting Started</a>
@@ -54,12 +54,17 @@
   $ pip install -r requirements/base.txt
 ```
 
-2. Setup Postgres on your local machine and run migrations.
+2. Setup Postgres on your local machine create database and run migrations.
 ```sh
   $ python manage.py migrate
 ```
 
-3. Run development server.
+3. Run tests.
+```sh
+  $ pytest -v 
+```
+
+4. Run development server.
 ```sh
   $ python manage.py runserver
 ```

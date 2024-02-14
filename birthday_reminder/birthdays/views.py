@@ -1,3 +1,14 @@
-from django.shortcuts import render
+"""Birthday Views."""
+from rest_framework import viewsets
 
-# Create your views here.
+from birthday_reminder.birthdays.models import Birthday
+
+
+class BirthdayViewSet(viewsets.ModelViewSet):
+    """Birthday ViewSet.
+
+    This ViewSet automatically provides `list`, `create`, `retrieve`,
+    `update` and `destroy` actions.
+    """
+
+    queryset = Birthday.objects.all()

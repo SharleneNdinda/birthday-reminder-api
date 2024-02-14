@@ -1,3 +1,4 @@
+"""Common models used across the project."""
 import uuid
 
 from django.db import models

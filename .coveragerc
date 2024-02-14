@@ -1,0 +1,12 @@
+[run]
+branch = True
+omit =
+    tests/*
+    birthday_reminder/**/migrations/*
+    birthday_reminder/**/__init__.py
+    birthday_reminder/config/*
+
+
+[report]
+fail_under = 100
+show_missing = True
