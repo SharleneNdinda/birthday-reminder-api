@@ -64,7 +64,7 @@
 
 ### 🔑 Authentication 
 
-birthday-reminder api uses `JWT` as the primary form of authentication. 
+birthday-reminder api uses `JWT` as its primary form of authentication. 
 The endpoints provided for obtaining a token and refreshing a token are:
 ```sh
 $ 127.0.0.1:8000/api/token
