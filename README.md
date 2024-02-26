@@ -45,7 +45,7 @@
 ## About The Project
 ### 🚀 Getting Started
 
-1. Clone repository and setup virtual environment. Install all project requirements.
+1. Clone this repository and setup virtual environment. Install all project requirements.
 ```sh
   $ pip install -r requirements/base.txt
 ```
